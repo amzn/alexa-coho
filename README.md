@@ -17,5 +17,5 @@ Here are a few direct links to our documentation:
 
 - [Alexa Lighting API (Node.js)](https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api.html)
 - [Lambda usage instructions](https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api-lambda-integration.html)
-- [Developer blog post](TBD)
+- [Developer blog post](https://developer.amazon.com/public/community/post/Tx23PZD8E8GWHAY/Introducing-the-New-Alexa-Lighting-API)
 - [Developer forum](https://forums.developer.amazon.com/forums/category.jspa?categoryID=71)
