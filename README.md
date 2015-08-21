@@ -4,7 +4,7 @@
 The documentation for the Alexa Lighting API is available  [here](https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api.html).
 
 ## Contents
-This repository includes a Node.js sample for an AWS Lambda function that is an adapter for an Alexa skill. You can find a sample virtual device created in the LightingAPI folder. The sample demonstrates:
+This repository includes a Node.js sample for an AWS Lambda function that is an adapter for an Alexa skill. The LightingAPI folder contains a sample virtual device that you can use as a basis for your own Lambda function. The sample demonstrates:
 - Responding to discovery messages
 - Responding to triggered events (on / off)
 - Making a simple call to an HTTPS endpoint
