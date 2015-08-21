@@ -23,6 +23,7 @@ var generateControlError = generateControlError;
  */
 exports.handler = function(event, context) {
 
+    // Warning! Logging this in production might be a security problem.
     log('Input', event);
 
     switch (event.header.namespace) {
@@ -35,7 +36,7 @@ exports.handler = function(event, context) {
          */
         case 'Discovery':
             handleDiscovery(event, context);
-		break;
+        break;
 
 		/**
 		 * The namespace of "Control" indicates a request is being made to us to turn a
@@ -44,7 +45,7 @@ exports.handler = function(event, context) {
 		 */
         case 'Control':
             handleControl(event, context);
-		break;
+        break;
 
 		/**
 		 * We received an unexpected message
@@ -53,7 +54,7 @@ exports.handler = function(event, context) {
             // Warning! Logging this in production might be a security problem.
             log('Err', 'No supported namespace: ' + event.header.namespace);
             context.fail('Something went wrong');
-		break;
+        break;
     }
 };
 
@@ -136,7 +137,7 @@ function handleControl(event, context) {
          * Retrieve the appliance id and accessToken from the incoming message.
          */
         var applianceId = event.payload.appliance.applianceId;
-        var accessToken = event.payload.accessToken.trim();
+        var accessToken = event.payload.accessToken;
         
         if (typeof applianceId !== "string" || typeof accessToken !== "string") {
             log("event payload is invalid");
