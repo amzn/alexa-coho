@@ -10,7 +10,7 @@ This repository includes a Node.js sample for an AWS Lambda function that is an 
 - Making a simple call to an HTTPS endpoint
 
 ## Usage
-The sample code provided in LightingAPI/SampleVirtualDevice.js can be used in the step 2 of “What You Need to Do” section of the [technical document](https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api.html). Once rest of the steps have been completed and you begin testing by linking and running discovery, you should see a dummy light if you navigate through Settings to Connected Home in the Alexa Companion app.
+You can use the LightingAPI/SampleVirtualDevice.js sample in step 2 of the “What You Need to Do” section of the [Alexa Lighting API documentation](https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api.html).  After you complete the remaining steps in the “What You Need to Do” section, test by linking and running discovery.  In the Alexa companion app, when you navigate through Settings to Connected Home, you should see a dummy light.
 
 ## Resources
 Here are a few direct links to our documentation:
