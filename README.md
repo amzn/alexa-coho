@@ -4,14 +4,13 @@
 The documentation for the Alexa Lighting API is available  [here](https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api.html).
 
 ## Contents
-This repository includes a sample on how to use nodejs AWS Lambda functions as Alexa Skills. Currently, you can find a sample virtual device created in the LightingAPI folder. This sample demonstrates:
+This repository includes a Node.js sample for an AWS Lambda function that is an adapter for an Alexa skill. You can find a sample virtual device created in the LightingAPI folder. The sample demonstrates:
 - Responding to discovery messages
 - Responding to triggered events (on / off)
-- Making simple call to an HTTPS endpoint
+- Making a simple call to an HTTPS endpoint
 
 ## Usage
-After following the lambda whitelisting instructions and OAuth2.0 setup instructions via the technical documentation, copy & paste the code in LightingAPI/SampleVirtualDevice.js to your lambda function.
-After you run discovery, you should be able to see a "Dummy Light" if you navigate to Alexa Companion App -> Settings -> Connected Home
+After following the [whitelisting and OAuth2.0 setup instructions in the technical documentation](https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api.html), copy the code from LightingAPI/SampleVirtualDevice.js and paste it into your Lambda function. After you run discovery, in the Alexa companion app you should see a dummy light if you navigate through Settings to Connected Home.
 
 
 ## Resources
