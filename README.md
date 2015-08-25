@@ -56,7 +56,7 @@ We’ve created a Showcase in the Alexa Connected Home Developer Forum (https://
 ### How do I make my adapter accessible to all Alexa customers? 
 Commercial home automation companies who would like to enable their completed skill adapter for all Alexa customers should contact us via email at alexa-coho-submissions@amazon.com. As an enthusiast you can follow the instructions in the Alexa Lighting API Developer Documentation (https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api.html) to enable your skill adapters for your own personal use.
 
-Can I write an adapter for devices that don’t have cloud connectivity? 
+### Can I write an adapter for devices that don’t have cloud connectivity? 
 Currently, the Alexa Lighting API supports devices that can be controlled via a cloud service. 
 
 
