@@ -51,10 +51,14 @@ We’ve created a showcase in the Alexa Connected Home Developer Forum (https://
 If your backend service does not support OAuth, you can register with any OAuth provider (e.g Login With Amazon) to enable customers to securely link their Amazon account with your device cloud service. Your Lambda skill adapter can then forward the incoming accessToken to the OAuth provider for validation. 
 
 ### How do I share my skill adapter with other developers? 
-We’ve created a Showcase in the Alexa Connected Home Developer Forum (https://forums.developer.amazon.com/forums/forum.jspa?forumID=152) where enthusiast/developers can share their skill adapters with others. Other developers and enthusiasts can reuse your code and enable the skill adapter for their own personal Echo device following the instructions in the Alexa Lighting API Developer Documentation (https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api.html). 
+We’ve created a Showcase in the Alexa Connected Home Developer Forum (https://forums.developer.amazon.com/forums/forum.jspa?forumID=152) where enthusiast/developers can share their skill adapters with others. Other developers and enthusiasts can reuse your code and enable the skill adapter for their own personal Alexa-enabled device following the instructions in the Alexa Lighting API Developer Documentation (https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api.html).
 
 ### How do I make my adapter accessible to all Alexa customers? 
 Commercial home automation companies who would like to enable their completed skill adapter for all Alexa customers should contact us via email at alexa-coho-submissions@amazon.com. As an enthusiast you can follow the instructions in the Alexa Lighting API Developer Documentation (https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api.html) to enable your skill adapters for your own personal use.
+
+### Will my skill adapter be accessible on AVS devices? 
+Provisioning your skill adapter will enable your skill adapter on your Alexa-enabled device (Echo and any AVS devices) using the customer account provisioned.
+Instructions for provisioning can be found here: https://forums.developer.amazon.com/forums/thread.jspa?threadID=8580 
 
 ### Can I write an adapter for devices that don’t have cloud connectivity? 
 Currently, the Alexa Lighting API supports devices that can be controlled via a cloud service. 
