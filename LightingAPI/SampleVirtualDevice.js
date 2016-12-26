@@ -34,7 +34,7 @@ exports.handler = function(event, context) {
          * can use the accessToken that is made available as part of the payload to determine
          * the customer.
          */
-        case 'Discovery':
+        case 'Alexa.ConnectedHome.Discovery':
             handleDiscovery(event, context);
         break;
 
@@ -43,7 +43,7 @@ exports.handler = function(event, context) {
 		 * given device on, off or brighten. This message comes with the "appliance"
 		 * parameter which indicates the appliance that needs to be acted on.
 		 */
-        case 'Control':
+        case 'Alexa.ConnectedHome.Control':
             handleControl(event, context);
         break;
 
@@ -69,7 +69,8 @@ function handleDiscovery(event, context) {
      * Crafting the response header
      */
     var headers = {
-        namespace: 'Discovery',
+	messageId: event.header.messageId,
+        namespace: 'Alexa.ConnectedHome.Discovery',
         name: 'DiscoverAppliancesResponse',
         payloadVersion: '1'
     };
