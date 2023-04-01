@@ -77,27 +77,28 @@ function handleDiscovery(event, context) {
     /**
      * Response body will be an array of discovered devices.
      */
-    var appliances = [];
 
-    var applianceDiscovered = {
-        applianceId: 'e145-4062-b31d-7ec2c146c5ea',
-        manufacturerName: 'DummyInfo',
-        modelName: 'ST01',
-        version: 'VER01',
-        friendlyName: 'Dummy light',
-        friendlyDescription: 'the light in kitchen',
-        isReachable: true,
-        additionalApplianceDetails: {
-            /**
-             * OPTIONAL:
-             * We can use this to persist any appliance specific metadata.
-             * This information will be returned back to the driver when user requests
-             * action on this appliance.
-             */
-            'fullApplianceId': '2cd6b650-e145-4062-b31d-7ec2c146c5ea'
+    var appliances = [
+        {
+            applianceId: 'e145-4062-b31d-7ec2c146c5ea',
+            manufacturerName: 'DummyInfo',
+            modelName: 'ST01',
+            version: 'VER01',
+            friendlyName: 'Dummy light',
+            friendlyDescription: 'the light in kitchen',
+            isReachable: true,
+            additionalApplianceDetails: {
+                /**
+                 * OPTIONAL:
+                 * We can use this to persist any appliance specific metadata.
+                 * This information will be returned back to the driver when user requests
+                 * action on this appliance.
+                 */
+                'fullApplianceId': '2cd6b650-e145-4062-b31d-7ec2c146c5ea'
+            }
         }
-    };
-    appliances.push(applianceDiscovered);
+    ];
+
 
     /**
      * Craft the final response back to Alexa Connected Home Skill. This will include all the 
